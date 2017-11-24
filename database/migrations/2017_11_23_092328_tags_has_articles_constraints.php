@@ -15,8 +15,8 @@ class TagsHasArticlesConstraints extends Migration
     {
         Schema::table('tags_has_articles', function (Blueprint $table) {
             //
-            $table->foreign('tags_idTag')->references('idtags')->on('tags');
-            $table->foreign('articles_idArticle')->references('idarticles')->on('articles');
+            $table->foreign('tags_idTag')->references('idTag')->on('tags');
+            $table->foreign('articles_idArticle')->references('idArticle')->on('articles');
         });
     }
 

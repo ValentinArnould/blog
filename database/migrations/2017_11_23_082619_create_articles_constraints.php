@@ -19,8 +19,8 @@ class CreateArticlesConstraints extends Migration
               $table->integer('users_id')->unsigned();
               $table->integer('categories_id')->unsigned();
             }*/
-            $table->foreign('users_id')->references('idusers')->on('users');
-            $table->foreign('categories_id')->references('idcategory')->on('categories');
+            $table->foreign('user_id')->references('idUser')->on('users');
+            $table->foreign('category_id')->references('idCategory')->on('categories');
         });
     }
 

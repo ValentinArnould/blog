@@ -16,7 +16,7 @@ class CreateCommentsConstraints extends Migration
         Schema::table('comments', function (Blueprint $table) {
             //
             $table->integer('article_id')->unsigned();
-            $table->foreign('article_id')->references('idarticles')->on('articles');
+            $table->foreign('article_id')->references('idArticle')->on('articles');
 
         });
     }
